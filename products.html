@@ -270,9 +270,59 @@ th:nth-child(4), td:nth-child(5) {
 
 }
 
+
+
 .atc-button:hover {
     background-color: #c50cda80; /* Background color on hover */
 }
+
+<style>
+    .buy-button,
+    .atc-button {
+        background-color: #8a2be2;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px; /* Add margin between buttons */
+    }
+
+    .buy-button:hover,
+    .atc-button:hover {
+        background-color: #8b4eb0;
+    }
+
+    /* Custom styling for the "Update" button */
+    .update-button {
+        background-color: #4CAF50; /* Green color */
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 200px;
+        cursor: pointer;
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .update-button:hover {
+        background-color: #4ea045; /* Darker green on hover */
+    }
+
+    /* Custom styling for the "Delete" button */
+    .delete-button {
+        background-color: #f43636; /* Red color */
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 200px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .delete-button:hover {
+        background-color: #d32f2f; /* Darker red on hover */
+    }
             </style>
             <center>
         
@@ -293,6 +343,7 @@ th:nth-child(4), td:nth-child(5) {
                     <input type="submit" style="background-color:#8b4eb0; color: white; border-color: black;" value="Login">
                 </form><br>
                 <button onclick="closeLoginModal()"  style="background-color:#8b4eb0; color: white; border-color: black;" >Close</button>
+                
             </div>
         </div>
 
@@ -324,73 +375,76 @@ th:nth-child(4), td:nth-child(5) {
         <th>Price</th>
         <th>Image</th>
         <th>Description</th>
+        
     </tr>
     <tr>
         <td>Black Flower Dress</td>
         <td>₱250.00</td>
         <td><img src="blackflower dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Black with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Black with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
         
     </tr>
     <tr>
         <td>White Flower Dress</td>
         <td>₱250.00</td>
         <td><img src="whiteflower dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Brown Flower Dress</td>
         <td>₱250.00</td>
         <td><img src="brownflower dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Brown with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Brown with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Purple Flower Dress</td>
         <td>₱250.00</td>
         <td><img src="purpleflower dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Purple with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Purple with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>White Cross Coords</td>
         <td>₱240.00</td>
         <td><img src="white cross dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button><button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
+      </p>
+  </td>
     </tr>
     <tr>
         <td>Nude Cross Coords</td>
         <td>₱240.00</td>
         <td><img src="nude cross dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Nude plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Nude plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Maroon Cross Coords</td>
         <td>₱240.00</td>
         <td><img src="maroon cross dress.jpg"></td>
-        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Maroon plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Maroon plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Brown Cutout Dress</td>
         <td>₱240.00</td>
         <td><img src="brown dress.jpg"></td>
-        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Brown cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Brown cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Black Cutout Dress</td>
         <td>₱240.00</td>
         <td><img src="cutout black.jpg"></td>
-        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Black cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Black cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Blue Y2K Dress</td>
         <td>₱220.00</td>
         <td><img src="y2k blue.jpg"></td>
-        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Blue Y2K Dress with arm sleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Blue Y2K Dress with arm sleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
     <tr>
         <td>Blue Y2K Dress</td>
         <td>₱220.00</td>
         <td><img src="y2k pink.jpg"></td>
-        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Pink Y2K Dress with armsleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Pink Y2K Dress with armsleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button> <button class="update-button">Update</button> <button class="delete-button">Delete</button></td>
     </tr>
 </table>
 
