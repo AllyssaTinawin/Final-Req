@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+    
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+       
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<head>
+    <!-- Add your existing head content here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Add your existing style content here -->
+</head>
+
+<body>
+
+    <!-- Your existing login content -->
+
+    <!-- After a successful login, add a link to the "Show User Info" page -->
+    <div class="login-success">
+        <p>Login successful! Redirecting...</p>
+        <a href="showuserinfo.html">Continue to Show User Info</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+<body>
+
+
+<button onclick="openLoginModal()">Login</button>
+
+
+<div id="loginModal" class="modal-overlay">
+    <div class="modal-content">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+        <button onclick="closeLoginModal()">Close</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript functions to open and close the login modal
+    function openLoginModal() {
+        document.getElementById('loginModal').style.display = 'block';
+    }
+
+    function closeLoginModal() {
+        document.getElementById('loginModal').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
