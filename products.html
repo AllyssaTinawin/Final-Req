@@ -12,11 +12,14 @@
 
     <style>
   
-        body {
-            background-color: black;
-            background-size: cover;
-            background-attachment: fixed;
-          }
+  body {
+    background-color: #000000;
+    background-image: url('blacksatinbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+          
 
             .modal {
               display: none;
@@ -82,17 +85,10 @@
         <nav class="navbar navbar-light bg-dark" align-right>
             <font class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:#e843a9; color: white; border-color: black;">Search</button></font>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:#8b4eb0; color: white; border-color: black;">Search</button></font>
               
               <style>
 
-                body {
-                    background-image: url('../../Tinawin_3_2_bootstrap/satin.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-
-                }
 
     
                 .modal-overlay {
@@ -118,14 +114,170 @@
                     padding: 20px;
                     border: 1px solid #cccccc00;
                     border-radius: 5px;
-                    color: #e843a9;
+                    color: #8b4eb0;
+
+                    
                     
                 }
+
+                header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    background-color: #e9579434;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: #8b4eb0;
+    text-align: center;
+    padding: 20px;
+}
+
+.dress img {
+    width: 10px;
+    height: 10px;
+    max-width: 10px;
+    height: auto; 
+    
+}
+
+.category-page {
+    background-color: #e9579400;
+    color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid none;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #8b4eb0; /* Change the color on hover */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#ac61da9e;
+}
+
+th, td {
+    border: 5px solid #000000;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+
+img {
+    max-width: 32%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+th:nth-child(1), td:nth-child(1) {
+    width: 20%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%;
+}
+
+th:nth-child(4), td:nth-child(5) {
+    width: 60%;
+}
+
+.buy-button {
+    background-color: #4e99b0; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding around text */
+    font-size: 16px; /* Font size */
+    border-radius: 200px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.buy-button:hover {
+    background-color: #272625; /* Background color on hover */
+}
+
+.atc-button {
+    background-color: #aa49c7; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding around text */
+    font-size: 16px; /* Font size */
+    border-radius: 200px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+
+}
+
+.atc-button:hover {
+    background-color: #c50cda80; /* Background color on hover */
+}
             </style>
             <center>
         
-        <button onclick="openLoginModal()" button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:#e843a9; color: white; border-color: black ;">Login</button>
-        <a href="user.html" class="btn btn-outline-success my-2 my-sm-0" style="background-color:#e843a9; color: white; border-color: black; padding: 30p;">Register</a>
+        <button onclick="openLoginModal()" button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:#8b4eb0; color: white; border-color: black ;">Login</button>
+        <a href="user.html" class="btn btn-outline-success my-2 my-sm-0" style="background-color:#8b4eb0; color: white; border-color: black; padding: 30p;">Register</a>
 
         
         <div id="loginModal" class="modal-overlay">
@@ -138,9 +290,9 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required><br><br>
         
-                    <input type="submit" style="background-color:#e843a9; color: white; border-color: black;" value="Login">
+                    <input type="submit" style="background-color:#8b4eb0; color: white; border-color: black;" value="Login">
                 </form><br>
-                <button onclick="closeLoginModal()"  style="background-color:#e843a9; color: white; border-color: black;" >Close</button>
+                <button onclick="closeLoginModal()"  style="background-color:#8b4eb0; color: white; border-color: black;" >Close</button>
             </div>
         </div>
 
@@ -164,176 +316,86 @@
 </nav>
 <hr>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <img class="card-img-top" src="dress.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" style="color: black; font-size: 24px;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>CHIFFON DRESS</b></h5>
-            <p class="card-text"><b>Size:</b> Small </p>
-            <p class="price"><b>Price:</b> ₱250.00</p>
-            <p class="fabric"><b>Material:</b> crepe, and chiffon</p>
-            <p class="colors"><b>Colors:</b> black, purple, brown.</p>
-            <p class="stocks"><b>Stocks: </b>100pcs</p>
-            <div class="btn-container">
-              <button class="btn btn-primary" style="background-color: #e843a9; border-color: black;">Add to cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img class="card-img-top" src="romper.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" style="color:black; font-size: 24px;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>BBK ROMPER</b></h5>
-            <p class="card-text"><b>Size:</b> Small-Semi Medium</p> 
-            <p class="price"><b>Price:</b> ₱350.00</p>
-            <p class="fabric"><b>Material:</b> HQ cotton</p>
-            <p class="colors"><b>Colors:</b> black, white, brown.</p>
-            <p class="stocks"><b>Stocks: </b>50pcs</p>
-            <div class="btn-container">
-              <button class="btn btn-primary" style="background-color: #e843a9; border-color: black;">Add to cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img class="card-img-top" src="coords.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" style="color:black; font-size: 24px;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>SELF TIE COORDS</b></h5>
-            <p class="card-text"><b>Size:</b> Small-Large</p> 
-            <p class="price"><b>Price:</b> ₱280.00</p>
-            <p class="fabric"><b>Material:</b> crepe, and chiffon</p>
-            <p class="colors"><b>Colors:</b> black, nude, maroon.</p>
-            <p class="stocks"><b>Stocks: </b>57pcs</p>
-            <div class="btn-container">
-              <button class="btn btn-primary" style="background-color: #e843a9; border-color: black;">Add to cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img class="card-img-top" src="cut out brown.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" style="color:black; font-size: 24px;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>CUT OUT DRESS</b></h5>
-            <p class="card-text"><b>Size:</b> Small-Semi Medium</p> 
-            <p class="price"><b>Price:</b> ₱350.00</p>
-            <p class="fabric"><b>Material:</b> nylon </p>
-            <p class="colors"><b>Colors:</b> black, white, choco.</p>
-            <p class="stocks"><b>Stocks: </b>35pcs</p>
-            <div class="btn-container">
-              <button class="btn btn-primary" style="background-color: #e843a9; border-color: black;">Add to cart</button>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <center>
-    <button id="openModalBtn" style="background-color:#e843a9; color: white; border-color: black;">Add a Product</button>
-  </center>
-
-  <body>
-
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="addProductLabel">Add a product</h1>
-          </div>
-          <div class="modal-body">
-          
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Product Name</label>
-            </div>
-            
-            <div class="input-group mb-3">
-              <span class="input-group-text">Description</span>
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-
-            <div class="input-group mb-3">
-              <span class="input-group-text">₱</span>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <span class="input-group-text">.00</span>
-            </div>
-
-            <div class="">
-              <label for="formFile" class="form-label">Product Image</label>
-              <input class="form-control" type="file" id="formFile">
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button id="closeModalBtn" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success">Add Product</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </body>
-    <script>
-        const modal = document.getElementById('productModal');
-        const openModalBtn = document.getElementById('openModalBtn');
-        const closeModalBtn = document.getElementById('closeModalBtn');
-
-
-        openModalBtn.addEventListener('click', function() {
-            modal.style.display = 'block';
-        });
-
-
-        closeModalBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-
-
-        window.addEventListener('click', function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        });
-    </script>
-</body>
-</html>
-        
-        <script>
-        
-            function openLoginModal() {
-                document.getElementById('loginModal').style.display = 'block';
-            }
-        
-            function closeLoginModal() {
-                document.getElementById('loginModal').style.display = 'none';
-            }
-        </script>
-        </center>
-        </form>
-          </nav>
-     </nav>
-     <hr>
-     <center>
-
-       <style>
-        .card {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease;
-    }
-
-        .card:hover {
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        background-color: #e843a989;
-    }
-       </style>
+</main>
    
-    </table>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Black Flower Dress</td>
+        <td>₱250.00</td>
+        <td><img src="blackflower dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Black with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+        
+    </tr>
+    <tr>
+        <td>White Flower Dress</td>
+        <td>₱250.00</td>
+        <td><img src="whiteflower dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Brown Flower Dress</td>
+        <td>₱250.00</td>
+        <td><img src="brownflower dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Brown with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Purple Flower Dress</td>
+        <td>₱250.00</td>
+        <td><img src="purpleflower dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Purple with flower prints</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>White Cross Coords</td>
+        <td>₱240.00</td>
+        <td><img src="white cross dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> White plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Nude Cross Coords</td>
+        <td>₱240.00</td>
+        <td><img src="nude cross dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Nude plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Maroon Cross Coords</td>
+        <td>₱240.00</td>
+        <td><img src="maroon cross dress.jpg"></td>
+        <td><p><b>Fabric:</b> Cotton and Mesh Sleeves</p><p><b>Color:</b> Maroon plain self tie coords</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Brown Cutout Dress</td>
+        <td>₱240.00</td>
+        <td><img src="brown dress.jpg"></td>
+        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Brown cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Black Cutout Dress</td>
+        <td>₱240.00</td>
+        <td><img src="cutout black.jpg"></td>
+        <td><p><b>Fabric:</b> Neoprene</p><p><b>Color:</b> Black cutout selftie Dress</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Blue Y2K Dress</td>
+        <td>₱220.00</td>
+        <td><img src="y2k blue.jpg"></td>
+        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Blue Y2K Dress with arm sleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+    <tr>
+        <td>Blue Y2K Dress</td>
+        <td>₱220.00</td>
+        <td><img src="y2k pink.jpg"></td>
+        <td><p><b>Fabric:</b> Knitted and Mesh</p><p><b>Color:</b> Pink Y2K Dress with armsleeves</p><p><b>Size:</b> XS-Medium Frame</p><button class="buy-button">Buy Now</button> <button class="atc-button"> Add To Cart</button></td>
+    </tr>
+</table>
 
-</center>
-<hr>
-  </body>
+<footer>
+    &copy; AllYan
+    
+</footer>
+</body>

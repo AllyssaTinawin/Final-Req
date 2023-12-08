@@ -1,196 +1,218 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
- 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+    <title>User Registration</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-    <script src="/scripts/index.js" defer></script>
-    <script src="/scripts/settings.js" defer></script>
 </head>
-  </head>
-  
 
-  <body>
-
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="">
             <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="AllYan logo.png" alt="Logo" width="50">
-                    <font color="white" size="5" face="AR JULIAN"><b>ㅤAllYan</b>Shop</font>
-                </a>
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="AllYan logo.png" alt="Logo" width="50">
+                        <font color="white" size="5" face="AR JULIAN"><b>ㅤAllYan</b>Shop</font>
+                    </a>
                 </div>
             </nav>
             <style>
-        body {
-            background-color: black;
-            background-size: cover;
-            background-attachment: fixed;
-          }
+                body {
+                    background-color: black;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
 
-            .modal {
-              display: none;
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.7);}
-  
-            .modal-overlay {
-              display: none;
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(34, 122, 103, 0.5);
-              z-index: 1;
-                      
-                  }
-          
-            .modal-content {
-               position: fixed;
-               top: 50%;
-               left: 35%;
-               width: 50%;
-               transform: translate(-20%, -50%);
-               background-color: #F5E8B7;
-               padding: 20px;
-                border: 1px solid #268b77;
-                border-radius: 10px;
-                  }
-                  .close {
-                color: #333;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                font-size: 20px;
-                cursor: pointer;
-  }
-      </style>
-   </nav>
+                .modal {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                }
+
+                .modal-overlay {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(34, 122, 103, 0.5);
+                    z-index: 1;
+                }
+
+                .modal-content {
+                    position: fixed;
+                    top: 50%;
+                    left: 35%;
+                    width: 50%;
+                    transform: translate(-20%, -50%);
+                    background-color: #F5E8B7;
+                    padding: 20px;
+                    border: 1px solid #268b77;
+                    border-radius: 10px;
+                }
+
+                .close {
+                    color: #333;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                .registration-form {
+                   text-align: left;
+                   max-width: 700px;
+                   margin: auto;
+                   padding: 15px;
+                   color: rgb(255, 255, 255);
+                   font-size: 20px;
+                   background-color: #fbb3f87d;
+                   box-sizing: border-box;
+
+                }
+
+                .form-group {
+                    margin-bottom: 15px;
+                    font-size: medium;
+                    color: rgb(255, 255, 255);
+                }
+
+                .form-group label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                .form-group input {
+                    width: 100%;
+                    padding: 8px;
+                    box-sizing: border-box;
+                    color: black;
+                }
+
+                .form-group button {
+                    background-color: #8a2be2;
+                    color: white;
+                    border: none;
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .form-group button:hover {
+                    background-color: #8b4eb0;
+                }
+
+                .center-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                #gender option {
+                color: rgb(0, 0, 0); 
+            
+            }
+            #gender {
+    color: black; 
+}
+            </style>
+        </nav>
     </form>
-  </div>
+</div>
 </div>
 </nav>
 <hr>
-<table>
-    <th>
-<img src="AllYan logo.png" style="width: 460px; height: 483px" src="..." />
-<div class="col-md-6">
-    <div class="GrowYourBusinessWithAllyanShopToday">
-        <span style="color: white; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Grow your business with </span>
-        <span style="color: #ED9ED6; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">All</span>
-        <span style="color: #5FBDFF; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Yan</span>
-        <span style="color: #ED9ED6; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word"> Shop </span>
-        <span style="color: white; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">today!</span>
+<div class="center-content">
+    <img src="AllYan logo.png" style="width: 150px; height: 150px" src="..." />
+    <div class="col-md-6">
+        <div class="GrowYourBusinessWithAllyanShopToday">
+            <span style="color: white; font-size: 35px; font-family: Inter; font-weight: 700; word-wrap: break-word">Grow your business with </span>
+            <span style="color: #ED9ED6; font-size: 35px; font-family: Inter; font-weight: 700; word-wrap: break-word">All</span>
+            <span style="color: #5FBDFF; font-size: 35px; font-family: Inter; font-weight: 700; word-wrap: break-word">Yan</span>
+            <span style="color: #ED9ED6; font-size: 35px; font-family: Inter; font-weight: 700; word-wrap: break-word"> Shop </span>
+            <span style="color: white; font-size: 35px; font-family: Inter; font-weight: 700; word-wrap: break-word">today!</span>
         </div>
+<div class="registration-form">
+    <h2><b>REGISTER</b></h2>
+    <form action="login.html" method="get">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
         </div>
-    </div>
-  </div>
-  <br><br>
 
-</body>
-</html>
-
-  <body>
-
-                </div>
-            </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
         </div>
-    </div>
 
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal-overlay">
-        <div class="modal-content">
-            <!-- Login form goes here -->
-            <h2>Login</h2>
-            <form>
-              
-                <input type="submit" style="background-color:#e843a9; color: white; border-color: black;" value="Login">
-                <form id="loginForm" onsubmit="return handleLogin()">
-                    <button type="submit">Login</button>
-                </form></form>
-            </form><br>
-            <button onclick="closeLoginModal()" style="background-color:#e843a9; color: white; border-color: black;">Close</button>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
         </div>
-    </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
 
     <script>
-       
-    </script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword');
+            const errorMessage = document.createElement('div');
 
-</body>
+            errorMessage.style.color = 'red';
+            errorMessage.style.marginTop = '5px';
 
-</html>
+            form.addEventListener('submit', function (event) {
+                if (passwordInput.value !== confirmPasswordInput.value) {
+                    event.preventDefault();
+                    errorMessage.textContent = 'Passwords do not match';
+                    form.appendChild(errorMessage);
+                }
+            });
 
- 
-
-  </body>
-    <script>
-        const modal = document.getElementById('productModal');
-        const openModalBtn = document.getElementById('openModalBtn');
-        const closeModalBtn = document.getElementById('closeModalBtn');
-
-
-        openModalBtn.addEventListener('click', function() {
-            modal.style.display = 'block';
-        });
-
-
-        closeModalBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-
-
-        window.addEventListener('click', function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
+            // Remove the error message when inputs change
+            [passwordInput, confirmPasswordInput].forEach(input => {
+                input.addEventListener('input', function () {
+                    errorMessage.textContent = '';
+                });
+            });
         });
     </script>
+</div>
+
 </body>
 </html>
-        
-        <script>
-        
-            function openLoginModal() {
-                document.getElementById('loginModal').style.display = 'block';
-            }
-        
-            function closeLoginModal() {
-                document.getElementById('loginModal').style.display = 'none';
-            }
-
-        </script>
-        </center>
-        </form>
-          </nav>
-     </nav>
-     <hr>
-     <center>
-
-       <style>
-        .card {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease;
-    }
-
-        .card:hover {
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        background-color: #e843a989;
-    }
-       </style>
-   
-    </table>
-
-</center>
-<hr>
-  </body>
-  </html>
