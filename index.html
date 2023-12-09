@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AllYan</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet"/>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-    <script src="/scripts/index.js" defer></script>
-    <script src="/scripts/settings.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="settings.js" defer></script>
+
   </head>
 
   <body>
@@ -91,7 +92,7 @@
               <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                   <span class="sr-only">Open user menu</span>
-                  <img class="w-8 h-8 rounded-full" src="https://cdn-icons-png.flaticon.com/512/1783/1783012.png" alt="user photo">
+                  <img class="w-8 h-8 rounded-full" style="width: fit-content;" src="exit.png" alt="user photo">
                 </button>
                 
                 <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
@@ -100,6 +101,9 @@
                     <span id="user-email" class="block text-sm  text-gray-500 truncate dark:text-gray-400">user@gmail.com</span>
                   </div>
                   <ul class="py-2" aria-labelledby="user-menu-button">
+                    <li>
+                        <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home</a>
+                      </li>
                     <li>
                       <a href="settings.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
                     </li>
@@ -268,35 +272,35 @@ th:nth-child(4), td:nth-child(5) {
 
 .buy-button {
     background-color: #4e99b0; /* Background color */
-    color: #ffffff; /* Text color */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Padding around text */
-    font-size: 16px; /* Font size */
-    border-radius: 200px; /* Rounded corners */
-    cursor: pointer; /* Show pointer cursor on hover */
-    text-transform: uppercase; /* Uppercase text */
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 200px;
+    cursor: pointer; 
+    text-transform: uppercase; 
 }
 
 .buy-button:hover {
-    background-color: #272625; /* Background color on hover */
+    background-color: #272625; 
 }
 
 .atc-button {
-    background-color: #aa49c7; /* Background color */
-    color: #ffffff; /* Text color */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Padding around text */
-    font-size: 16px; /* Font size */
-    border-radius: 200px; /* Rounded corners */
-    cursor: pointer; /* Show pointer cursor on hover */
-    text-transform: uppercase; /* Uppercase text */
+    background-color: #aa49c7; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 200px;
+    cursor: pointer; 
+    text-transform: uppercase;
 
 }
 
 
 
 .atc-button:hover {
-    background-color: #c50cda80; /* Background color on hover */
+    background-color: #c50cda80; 
 }
 
 
@@ -308,7 +312,7 @@ th:nth-child(4), td:nth-child(5) {
         padding: 5px;
         border-radius: 5px;
         cursor: pointer;
-        margin-right: 5px; /* Add margin between buttons */
+        margin-right: 5px;
     }
 
     .buy-button:hover,
@@ -316,35 +320,35 @@ th:nth-child(4), td:nth-child(5) {
         background-color: #8b4eb0;
     }
 
-    /* Custom styling for the "Update" button */
+   
     .update-button {
-        background-color: #4CAF50; /* Green color */
+        background-color: #4CAF50; 
         color: white;
         border: none;
         padding: 5px;
         border-radius: 200px;
         cursor: pointer;
         margin-right: 5px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .update-button:hover {
-        background-color: #4ea045; /* Darker green on hover */
+        background-color: #4ea045; 
     }
 
-    /* Custom styling for the "Delete" button */
+   
     .delete-button {
-        background-color: #f43636; /* Red color */
+        background-color: #f43636; 
         color: white;
         border: none;
-        padding: 5px;
+        padding: 4px;
         border-radius: 200px;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .delete-button:hover {
-        background-color: #d32f2f; /* Darker red on hover */
+        background-color: #d32f2f; 
     }
             </style>
             <center>
